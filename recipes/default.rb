@@ -14,3 +14,4 @@ bash 'update_nginx_passenger_conf' do
     sed -i "s/passenger_max_pool_size.*/passenger_max_pool_size $proc_count;/" nginx.conf
     sed -i "s/passenger_min_instances.*/passenger_min_instances $min_inst;/" nginx.conf
   CONF
+end
